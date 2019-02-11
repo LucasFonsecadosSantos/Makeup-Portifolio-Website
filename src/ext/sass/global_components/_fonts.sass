@@ -2,7 +2,7 @@
 // GPL - General Public License v3.0
 ///////////////////////////////////////////////////////////////////////////////////
 ///                                                                             ///
-/// [PROJECT]: Name: null                                                       ///
+/// [PROJECT]: Name: Taynara Dias - Professional Makeup Artist Website.         ///
 ///            URL:  null                                                       ///
 /// +-------------------------------------------------------------------------+ ///
 ///                                                                             ///
@@ -12,13 +12,18 @@
 ///                 Tester:           Lucas Fonseca dos Santos.                 ///
 /// +-------------------------------------------------------------------------+ ///
 ///                                                                             ///
-/// [INFORMATIONS]: Fonts:  Ubuntu, 300, 400, 500, 700                          ///
-///                         Open Sans, 300, 400, 600, 700                       ///
-///                         Open Sans Condensed, 300, 700                       ///
-///                 Colors: #000000                                             ///
-///                         #000000                                             ///
-///                         #000000                                             ///
-///                         #000000                                             ///
+/// [INFORMATIONS]: Fonts:  Montserrat, 300, 400, 400, 500, 600, 700            ///
+///                                                                             ///
+///                         Open Sans, 300, 400, 400 (italic), 600,             ///
+///                         600 (italic), 700                                   ///
+///                                                                             ///
+///                 Colors: #051F1D //Dark Background                           ///
+///                         #F7F7F7 //Light Background                          ///
+///                         #FFFFFF //Text color                                ///
+///                         #EC008C //Degrade01                                 ///
+///                         #FC6767 //Degrade02                                 ///
+///                         #ED5565 //Heart Color                               ///
+///                         #323133 //Text color                                ///
 /// +-------------------------------------------------------------------------+ ///
 ///                                                                             ///
 ///   Use .content to write class .container by bootstrap and .line to write    ///
@@ -33,7 +38,7 @@
 ///                              FILE INFORMATION                               ///
 ///-----------------------------------------------------------------------------///
 /// [NAME]: Fonts                                                               ///
-/// [CONTENT]: Responsible for all system fonts definitions.                    ///
+/// [CONTENT]: ALl project fonts params.                                        ///
 ///////////////////////////////////////////////////////////////////////////////////
 
 
@@ -42,14 +47,39 @@
 
 //----------------------------------[ FONTS ]------------------------------------//
 p
+    font:
+        family: $__FONT__text1_
 h1
+    font:
+        family: $__FONT__title_
 h2
+    font:
+        family: $__FONT__title_
 h3
+    font:
+        family: $__FONT__title_
 h4
+    font:
+        family: $__FONT__title_
 h5
+    font:
+        family: $__FONT__title_
 h6
+    font:
+        family: $__FONT__title_
 label
+    font:
+        family: $__FONT__text1_
 a
+    @extend .transitions
+    font:
+        family: inherit
+        weight: inherit
+        size:   inherit
+    text:
+        decoration: underline
+    color:  inherit
+    cursor: pointer
 //-------------------------------------------------------------------------------//
 
 

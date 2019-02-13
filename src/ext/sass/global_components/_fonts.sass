@@ -49,18 +49,49 @@
 p
     font:
         family: $__FONT__text1_
+        size: 1rem
+        weight: 300
+    color: #FFF
+    //letter-spacing: .1rem
 h1
     font:
         family: $__FONT__title_
+        size: 2rem
+        weight: 300
+    text:
+        transform: uppercase
+    margin: 0px
+    padding: 0px
+    color: #FFF
+    letter-spacing: 2rem
+    transform: scale(1, .9)
+    
 h2
     font:
         family: $__FONT__title_
+        size: 2rem
+        weight: 700
+    text-transform: uppercase
+    background: -webkit-linear-gradient($__COLOR__orange_, $__COLOR__pink_)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
 h3
+    margin: 0px
+    padding: 0px
     font:
         family: $__FONT__title_
+        size: .9rem
+        weight: 300
+    text:
+        transform: uppercase
+    color: #fff
 h4
     font:
         family: $__FONT__title_
+        size: 8rem
+        weight: 700
+    &:first-letter
+        text-transform: uppercase
 h5
     font:
         family: $__FONT__title_

@@ -46,6 +46,57 @@
 
 //---------------------------------[ INDEX01 ]-----------------------------------//
 #index01
+    @extend .container-fluid
+    height: auto
+    min-height: 100vh
+    background: #000
+    .subIndex01
+        @include responsive_system(12,6,6,6,6)
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        height: 50vh
+        filter: grayscale(1)
+        -o-filter: grayscale(1)
+        -ms--filter: grayscale(1)
+        -moz-filter: grayscale(1)
+        -webkit-filter: grayscale(1)
+        background:
+            size: cover
+            position: center
+        &:nth-child(1)
+            background-image: url(../../img/001.jpg)
+        &:nth-child(2)
+            background-image: url(../../img/002.jpg)
+        &:nth-child(3)
+            background-image: url(../../img/003.jpg)
+        &:nth-child(4)
+            background-image: url(../../img/004.jpg)
+        &:hover
+            filter: none !important
+            -o-filter: none !important
+            -ms--filter: none !important
+            -moz-filter: none !important
+            -webkit-filter: none !important
+
+            background-size: 110%
+            
+    .subIndex01:hover > h4
+        color: $__COLOR__pink_ !important
+#index02
+    @extend .container
+    height: auto
+    min-height: 80vh
+    background: #000
+    .subIndex02
+        &:first-child
+            @include responsive_system(12,6,4,4,4)
+            text-align: center
+        &:last-child
+            @include responsive_system(12,6,8,8,8)
+            text-align: center
+
 //-------------------------------------------------------------------------------//
 
 

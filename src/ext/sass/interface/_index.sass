@@ -79,7 +79,6 @@
             -ms--filter: none !important
             -moz-filter: none !important
             -webkit-filter: none !important
-
             background-size: 110%
             
     .subIndex01:hover > h4
@@ -87,16 +86,74 @@
 #index02
     @extend .container
     height: auto
-    min-height: 80vh
     background: #000
     .subIndex02
+        //padding: $__PADDING-DEFAULT__
+        padding: 150px 0px 0px 0px
         &:first-child
             @include responsive_system(12,6,4,4,4)
-            text-align: center
+            text-align: left
+            display: flex
+            justify-content: left
+            align-items: center
+            img
+                position: absolute
+                z-index: 2
+                transform: rotate(-10deg)
+            .back01
+                z-index: 1
+                position: absolute
+                width: 290px
+                height: 381px
+                background: $__COLOR__pink_
+                //transform: rotate(-5deg)
+
+            .back02
+                z-index: 0
+                position: absolute
+                width: 310px
+                height: 401px
+                background: $__COLOR__orange_
+                transform: rotate(10deg)
+
         &:last-child
             @include responsive_system(12,6,8,8,8)
-            text-align: center
+            text-align: left
+            display: flex
+            justify-content: center
+            align-items: center
+            button:last-child
+                    margin: 0px 15px 0px 15px
+            .row
+                display: inline !important
 
+#indexDivider01
+    @include divider(#000, #FFF)
+#index03
+    @extend .container-fluid
+    height: auto
+    padding: $__PADDING_DEFAULT__
+    background: #FFF
+    .subIndex03
+        text-align: center
+        img
+            width: 51%
+            margin-bottom: 15%
+            &:nth-child(2n)
+                transform: rotate(-25deg)
+            &:nth-child(2n-1)
+                transform: rotate(25deg)
+        p
+            color: $__COLOR__darkText_
+        &:nth-child(1)
+            @include responsive_system(12,2,2,2,2)
+        &:nth-child(2)
+            @include responsive_system(12,8,8,8,8)
+        &:nth-child(3)
+            @include responsive_system(12,2,2,2,2)
+#indexDivider02
+    @include divider(#FFF, #000)
+    
 //-------------------------------------------------------------------------------//
 
 

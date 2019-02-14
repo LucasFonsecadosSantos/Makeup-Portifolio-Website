@@ -111,7 +111,7 @@ html
     -o-transform: rotate($param)
     -ms-transform: rotate($param)
     -moz-transform: rotate($param)
-    -webkit--transform: rotate($param)
+    -webkit-transform: rotate($param)
 
 @mixin gradient_background($param1, $param2, $param3)
     background: $param2
@@ -134,6 +134,15 @@ html
     @extend .col-md-#{$param3}
     @extend .col-lg-#{$param4}
     @extend .col-xl-#{$param5}
+
+@mixin divider($color_1, $color_2)
+    width:          100vw
+    height:         auto
+    min-height:     300px
+    border-top:     solid 150px $color_1
+    border-bottom:  solid 150px $color_2
+    border-left:    solid 50vw $color_1
+    border-right:   solid 50vw $color_2
 //-------------------------------------------------------------------------------//
 
 

@@ -132,25 +132,57 @@
 #index03
     @extend .container-fluid
     height: auto
-    padding: $__PADDING_DEFAULT__
+    //padding: $__PADDING_DEFAULT__
     background: #FFF
     .subIndex03
         text-align: center
         img
-            width: 51%
+            width: 60%
             margin-bottom: 15%
-            &:nth-child(2n)
-                transform: rotate(-25deg)
-            &:nth-child(2n-1)
-                transform: rotate(25deg)
+            transform: rotate(-25deg)
         p
             color: $__COLOR__darkText_
         &:nth-child(1)
-            @include responsive_system(12,2,2,2,2)
+            @include responsive_system(12,4,4,4,4)
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
         &:nth-child(2)
             @include responsive_system(12,8,8,8,8)
-        &:nth-child(3)
-            @include responsive_system(12,2,2,2,2)
+            text-align: left
+            display: flex
+            justify-content: center
+            align-items: center
+            .row
+                display: inline !important
+#index04
+    @extend .container-fluid
+    height: auto
+    //padding: $__PADDING_DEFAULT__
+    background: #000
+    .subIndex04
+        text-align: center
+        img
+            width: 60%
+            margin-bottom: 15%
+            transform: rotate(-25deg)
+        p
+            color: #fff
+        &:nth-child(2)
+            @include responsive_system(12,4,4,4,4)
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
+        &:nth-child(1)
+            @include responsive_system(12,8,8,8,8)
+            text-align: left
+            display: flex
+            justify-content: center
+            align-items: center
+            .row
+                display: inline !important
 #indexDivider02
     @include divider(#FFF, #000)
     

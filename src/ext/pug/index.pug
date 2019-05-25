@@ -114,6 +114,9 @@ html
                             button(elementStyle="style_01") converse comigo
                             button(elementStyle="style_01") agende uma secao
             #indexDivider01
+            #index03FIXED
+                iframe
+            #indexDivider01b
             #index03
                 .container
                     .row
@@ -133,14 +136,19 @@ html
                 .container
                     .row
                         .subIndex04
-                            .row
-                                p Nos estudos antropológicos podem-se encontrar vários exemplos de pinturas artísticas nos corpos de nativos americanos e de aborígines do continente africano. Muitos povos tinham o hábito de utilizar elementos de origem vegetal como o urucum ou o carvão, bem como argila e pedras trituradas.
-                                //p Foi no Egito que a maquiagem ganhou seu caráter moderno e estético. Esta civilização criou o culto da beleza entre homens e mulheres, especialmente com o uso de hena na elaboração de pinturas faciais e corporais, particularmente em volta dos olhos, destacando-os sem igual. Os faraós mantinham a crença na preservação da beleza mesmo depois da morte, acreditando que deveriam estar perfeitamente embelezados ao ressuscitarem; assim, também os mortos eram maquiados.
-                                //p Hoje a maquiagem é profundamente influenciada e orientada pelas imposições do universo da moda. A matéria-prima utilizada é de outra natureza, mas a busca incansável da beleza é a mesma. De acordo, porém, com um dos maiores maquiadores brasileiros, Aguinaldo Silva Leandro, esta técnica não deve se submeter ao mundo ‘fashion’, e sim oferecer a cada um o máximo bem-estar possível.
-                                //p Atualmente a profissão de maquiador está envolta em uma aura de status e glamour. O profissional é não só um artista, mas também um técnico especialista, o qual conhece uma ampla gama de essências que não só produzem a desejada beleza humana, mas também conferem as necessárias características aos intérpretes teatrais, televisivos e cinematográficos, além de realçarem fotos e desfiles da esfera ‘fashion’.
-                                //p A maquiagem é fundamental na constituição do personagem, nos palcos ou nas telas dos cinemas. Desde a antiga Grécia, nas raízes do Teatro, passando pelo Japão, Índia e outras nações orientais, recorre-se a esta técnica para alterar a identidade do ator. Na TV brasileira alguns profissionais se destacam, como Eric Rzepecki, que brilhou na Rede Globo na década de 70.
-                        .subIndex04
                             img(src="img/structure/icons/make02.svg")
+                        .subIndex04
+                            form(action="#", method="POST")
+                            
+                                .subForm
+                                    input(type="text", name="name", placeholder="Nome completo", alt="Campo para inserir nome completo.", title="Insira o seu nome completo.")
+                                .subForm
+                                    input(type="text", name="name", placeholder="Nome completo", alt="Campo para inserir nome completo.", title="Insira o seu nome completo.")
+                                .subForm
+                                    input(type="email", name="email", placeholder="Email", alt="Campo para inserir endereco de email.", title="Insira o seu email.")
+                                .subForm
+                                    input(type="text", name="telephone", placeholder="Telefone", alt="Campo para inserir numero de telefone.", title="Insira o seu telefone.")
+                                input(type="date", name="date", alt="Campo para escolher uma data.", title="Selecione uma data.")
             #indexDivider01
         footer
             include include/footer.pug

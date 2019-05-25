@@ -127,14 +127,57 @@
             .row
                 display: inline !important
 
-#indexDivider01
-    @include divider(#000, #FFF)
-#index03
+#index03FIXED
     @extend .container-fluid
     height: auto
     //padding: $__PADDING_DEFAULT__
     background: #FFF
+    text-align: center
+    iframe
+        background: #F00
+        width: 720px
+        height: 480px
+
+#indexDivider01
+    @include divider(#000, #FFF)
+
+#indexDivider01b
+    @include divider(#FFF,#000)
+
+#index03
+    @extend .container-fluid
+    height: auto
+    //padding: $__PADDING_DEFAULT__
+    background: #000
     .subIndex03
+        text-align: center
+        img
+            width: 60%
+            margin-bottom: 15%
+            transform: rotate(-25deg)
+        p
+            //color: $__COLOR__darkText_
+            color: $__COLOR__white_
+        &:nth-child(1)
+            @include responsive_system(12,4,4,4,4)
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
+        &:nth-child(2)
+            @include responsive_system(12,8,8,8,8)
+            text-align: left
+            display: flex
+            justify-content: center
+            align-items: center
+            .row
+                display: inline !important
+#index04
+    @extend .container-fluid
+    height: auto
+    //padding: $__PADDING_DEFAULT__
+    background: #fff
+    .subIndex04
         text-align: center
         img
             width: 60%
@@ -154,37 +197,16 @@
             display: flex
             justify-content: center
             align-items: center
-            .row
-                display: inline !important
-#index04
-    @extend .container-fluid
-    height: auto
-    //padding: $__PADDING_DEFAULT__
-    background: #000
-    .subIndex04
-        text-align: center
-        img
-            width: 60%
-            margin-bottom: 15%
-            transform: rotate(-25deg)
-        p
-            color: #fff
-        &:nth-child(2)
-            @include responsive_system(12,4,4,4,4)
-            text-align: center
-            display: flex
-            justify-content: center
-            align-items: center
-        &:nth-child(1)
-            @include responsive_system(12,8,8,8,8)
-            text-align: left
-            display: flex
-            justify-content: center
-            align-items: center
+            .subForm
+                @include responsive_system(12,12,6,6,6)
+                margin: 0px
+                padding: 0px
+                input
+                    width: 100%
             .row
                 display: inline !important
 #indexDivider02
-    @include divider(#FFF, #000)
+    @include divider(#000, #FFF)
     
 //-------------------------------------------------------------------------------//
 
